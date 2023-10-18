@@ -8,7 +8,7 @@ const port = 8888
 app.use(cors())
 app.use(cookieParser())
 
-app.get('/', (req, res) => {
+app.get('/hello', (req, res) => {
 
     res.cookie("name", "foobar")
     if (req.cookies.name !== undefined) {
